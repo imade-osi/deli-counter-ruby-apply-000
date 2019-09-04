@@ -13,10 +13,20 @@ def line (array)
   
 end 
 
+COUNT = 1
+
 def take_a_number(array, name)
+  
+  
+  new_arr = []
   array << name 
   
-  puts "Welcome, #{name}. You are number #{array.index(name) + 1} in line."
+  new_arr << COUNT 
+  # new_arr << array.index(name) + 1 
+  
+    puts "Welcome, #{name}. You are number #{count} in line."
+  
+    count += 1
 end
 
 
